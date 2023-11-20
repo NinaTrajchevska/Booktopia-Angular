@@ -1,4 +1,4 @@
-// book-details.component.ts
+
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BookService } from '../book.service';

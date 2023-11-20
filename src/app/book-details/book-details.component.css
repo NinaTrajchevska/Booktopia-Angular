@@ -6,7 +6,7 @@
 }
 
 #containerDetails, .bookDetails {
-   /* Adjusted to allow for some spacing */
+
   margin-bottom: 20px;
   text-align: center;
   background-color: #f5f5f5;
@@ -30,7 +30,7 @@
 }
 
 .buyButton {
-  margin-top: 10px; /* Add space between buttons and book details */
+  margin-top: 10px; 
   border: 1px solid #000000;
   background: #ffffff;
   width: 150px;
