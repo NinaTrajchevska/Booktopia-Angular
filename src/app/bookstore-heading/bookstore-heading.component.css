@@ -1,0 +1,33 @@
+.bookstore_heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.496rem;
+    line-height: 2.333rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 50px;
+  }
+
+  .bookstore_heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('src/assets/book1.jpg');
+    background-size: cover;
+    opacity: 0.4;
+  }
+  
+  .bookstore_heading p {
+    color: black;
+    opacity: 0.9;
+  }
+  

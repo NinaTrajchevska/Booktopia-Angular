@@ -1,0 +1,56 @@
+/* src/app/book-list/book-list.component.css */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book {
+  width: calc(33.33% - 20px); /* Adjusted to allow for some spacing */
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px; 
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.book img {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-title,
+.book-author {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viewDetailsButton,
+.buyButton {
+  margin-top: 10px; /* Add space between buttons and book details */
+  border: 1px solid #000000;
+  background: #ffffff;
+  width: 150px;
+  height: 40px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.buyButton {
+  border-radius: 0px 180px 180px 0px;
+}
+
+.viewDetailsButton {
+  border-radius: 180px 0px 0px 180px;
+}

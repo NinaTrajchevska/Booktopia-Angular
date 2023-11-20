@@ -1,0 +1,23 @@
+<!-- book-details.component.html -->
+<div *ngIf="book" class="wrapper">
+  <div id="containerDetails">
+    <div id="coverImg">
+      <img id="cover" mat-card-image [src]="book.volumeInfo.imageLinks?.thumbnail" alt="Cover Image">
+    </div>
+    <div id="textDetails">
+      <h1 id="title">{{ book.volumeInfo.title }}</h1>
+    </div>
+  </div>
+  <div class="bookDetails">
+    <h1 id="descDetails">Description</h1>
+    <p class="desc">{{ book.volumeInfo.description }}</p>
+    <button mat-button class="buyButton" (click)="addToCart()">Add to Cart</button>
+
+  </div>
+
+  <!-- ng-template for cart display -->
+   <ng-container *ngIf="showCart; ">
+    <app-cart></app-cart>
+  </ng-container>
+  
+</div>

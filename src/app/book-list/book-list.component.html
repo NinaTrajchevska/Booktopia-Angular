@@ -1,0 +1,21 @@
+<div class="container">
+  <ng-container *ngIf="!showBookDetails; else bookDetails">
+    <mat-card *ngFor="let book of books" class="book">
+      <img mat-card-image [src]="book.volumeInfo.imageLinks?.thumbnail" alt="Book Cover" />
+      <mat-card-content>
+        <div class="book-title">{{ book.volumeInfo.title }}</div>
+        <div class="book-author">{{ book.volumeInfo.authors?.slice(0, 2).join(', ') }}</div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="viewDetailsButton" (click)="viewDetails(book)">View Details</button>
+        <button mat-button class="buyButton">Buy</button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+  <ng-template #bookDetails>
+    <!-- Display book details -->
+    
+    <app-book-details [book]="selectedBook"></app-book-details>
+    
+  </ng-template>
+</div>
